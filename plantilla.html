@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Alejandro Torres - Sociología y Desarrollo Sustentable</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2E7D32;
+            --secondary-color: #81C784;
+            --accent-color: #FFB300;
+            --text-color: #333333;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+        }
+
+        .header {
+            background: linear-gradient(rgba(46, 125, 50, 0.9), rgba(46, 125, 50, 0.9)),
+                        url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .profile-section {
+            max-width: 1200px;
+            margin: -80px auto 40px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+        }
+
+        .profile-photo {
+            width: 100%;
+            border-radius: 15px;
+            object-fit: cover;
+        }
+
+        .nav {
+            background: var(--primary-color);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 40px 20px;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: var(--secondary-color);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 0.9em;
+        }
+
+        .contact-info {
+            text-align: center;
+            padding: 50px 20px;
+            background: #f8f9fa;
+        }
+
+        .social-links a {
+            color: var(--primary-color);
+            font-size: 24px;
+            margin: 0 15px;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            .profile-section {
+                grid-template-columns: 1fr;
+                margin-top: -40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Dr. Alejandro Torres</h1>
+        <p>Sociología | Desarrollo Rural Sustentable | Políticas Públicas</p>
+    </header>
+
+    <div class="profile-section">
+        <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+             alt="Foto profesional" 
+             class="profile-photo">
+        <div>
+            <h2 style="color: var(--primary-color); margin-top: 0;">Sobre Mí</h2>
+            <p>Sociólogo con más de 12 años de experiencia en investigación aplicada y desarrollo de políticas públicas para comunidades rurales. Especializado en integrar tecnología sostenible con prácticas tradicionales para lograr un desarrollo equitativo y respetuoso con el medio ambiente.</p>
+            <div style="margin-top: 20px;">
+                <span class="skill-tag">Análisis Sociocultural</span>
+                <span class="skill-tag">Políticas Públicas</span>
+                <span class="skill-tag">Sostenibilidad Ambiental</span>
+                <span class="skill-tag">Metodologías Participativas</span>
+            </div>
+        </div>
+    </div>
+
+    <nav class="nav">
+        <a href="#experiencia">Experiencia</a>
+        <a href="#formacion">Formación</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#publicaciones">Publicaciones</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section class="section" id="experiencia">
+        <h2>Experiencia Relevante</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>Coordinador de Investigación</h3>
+                <p>Centro Latinoamericano para el Desarrollo Rural · 2018-Presente</p>
+                <ul>
+                    <li>Liderazgo de equipos multidisciplinarios</li>
+                    <li>Diseño de estrategias de desarrollo comunitario</li>
+                    <li>Medición de impacto de programas sociales</li>
+                </ul>
+            </div>
+            <!-- Más tarjetas de experiencia -->
+        </div>
+    </section>
+
+    <section class="section" id="formacion">
+        <h2>Formación Académica</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>Doctorado en Desarrollo Rural Sustentable</h3>
+                <p>Universidad Nacional Autónoma de México · 2015-2019</p>
+                <p>Tesis: "Tecnologías apropiadas para la transición ecológica en comunidades agrícolas"</p>
+            </div>
+            <!-- Más tarjetas de formación -->
+        </div>
+    </section>
+
+    <section class="section" id="proyectos">
+        <h2>Proyectos Destacados</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>Sistema de Agua Autogestionado</h3>
+                <p>Implementación en 15 comunidades de Oaxaca, México (2022)</p>
+                <ul>
+                    <li>Reducción del 40% en costos de mantenimiento</li>
+                    <li>Capacitación de 200+ usuarios</li>
+                </ul>
+            </div>
+            <!-- Más tarjetas de proyectos -->
+        </div>
+    </section>
+
+    <div class="contact-info" id="contacto">
+        <h2>Contacto Profesional</h2>
+        <p>alejandro.torres@example.com · +52 55 1234 5678</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-researchgate"></i></a>
+            <a href="#"><i class="fab fa-google-scholar"></i></a>
+        </div>
+    </div>
+</body>
+</html>
